@@ -1,0 +1,58 @@
+# Install home-brew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Install iTerm2
+brew cask install iterm2
+
+# Install Oh My Zsh
+zsh-like-a-pro-c0ab3f3c1156/
+
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Upgrade Oh My Zsh
+upgrade_oh_my_zsh
+
+# Configuring zsh profile
+## check instruction here: https://www.freecodecamp.org/news/how-to-configure-your-macos-terminal-with-
+nano ~/.zshrc
+	## change zsh theme to this:
+	ZSH_THEME="agnoster"
+
+	## download the custom theme(repo) we want inside our .oh-my-zsh custom/theme
+	$ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+	## change theme to the new custom theme
+	ZSH_THEME="powerlevel9k/powerlevel9k"
+
+	## update terminal
+	source ~/.zshrc
+
+# Adding Inconsolata font
+	## make new empty dir
+	mkdir Fonts
+
+	## download font repo inside new Font dir
+	git clone https://github.com/powerline/fonts.git /Users/ernie_py/Documents/Ernesto/Programming/Private/userProfile/Fonts
+
+	## cd into the Fonts dir and install fonts
+	cd Fonts %% ./install.sh
+
+	## in MAC go to iTerm2, then Preferences and change Text/Font to Incosolata
+
+# Adding Color Theme like Batman
+	
+	## create an empty ColorTHeme dir
+	mkdir Color Theme
+
+	## download ColorThem to your ColorTheme dir
+	git clone https://github.com/mbadolato/iTerm2-Color-Schemes.git /Users/ernie_py/Documents/Ernesto/Programming/Private/userProfile/ColorTHeme
+
+	## select your them in iTerm
+	Navigate to iTerm2 > Preferences > Profile > Colors > Color Presets > Import
+
+	Navigate to the schemes folder and select your preferred color schemes to import them.
+	Click on a specific color scheme to activate it.
+
+	
+
+

@@ -1,0 +1,14 @@
+{
+  "name": "Lesson 8 Practice 1 - Remote Clicking - Answers",
+  "description": "Project",
+  "main": "OpenAppWithDoubleClickImage.xaml",
+  "dependencies": {},
+  "excludedData": [
+    "Private:*",
+    "*password*"
+  ],
+  "toolVersion": "18.2",
+  "projectVersion": "1.0.7251.15467",
+  "packOptions": {},
+  "runtimeOptions": {}
+}
