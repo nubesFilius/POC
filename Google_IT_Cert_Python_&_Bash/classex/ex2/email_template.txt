@@ -1,0 +1,15 @@
+Hello [fullname],
+
+Welcome to the Virtual Tech Team.
+We are happy to have you here with us.
+
+We just wanted to check that we have your information correct:
+
+Full Name: [last_name], [first_name]
+email: [email]
+phone(s): [phones]
+
+If anything is incorrect, please don't hesitate to reach out to us.
+
+Best,
+The Virtual Team

@@ -1,0 +1,11 @@
+Exercise 1:
+
+- Go through the active_jobs_log.txt file and find all the failed jobs.
+- From the Failed Jobs, you should be able to get the user that was running the job.
+- Find the user's email from the "/userProfiles/users.csv".
+- Craft a message to send to the user if the job they tried to run Failed
+- In the message, include:
+	- introduction to the user
+	- The name of the job queue
+	- The id of the job
+	- The time and date the job ran

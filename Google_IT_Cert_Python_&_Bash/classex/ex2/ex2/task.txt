@@ -1,0 +1,21 @@
+Exercise 2:
+
+You do not have access to the database but you have access to the log file for today's activity. You must do the following:
+
+- Get a list of all the newly registered users and gather the following:
+	- first and last name
+	- email
+	- phone number
+
+Some users have submitted and additional information document that saved in the following path for each user "public/uploads/[username]". In each user folder you will find a document named "additional_info.txt". That document contains other phone numbers, secondary emails and people they think should join the Team.
+
+- Go to each users additional info document and add their secondary emails and phones to the list you are making above:
+
+- Additionally, gather the information from people they are referring and make a separate list to use later.
+
+- For each newly registered user. You will find a welcome sms template and a welcome email template that you can use to send them welcome messages.
+
+- If the SMS fails to send, send them an email with the same message from the sms.
+
+- Finally for each Referral from the registered user's "additional_info.txt", create a template sms template named "referral_template.txt" and craft a message to send in order to invite them to the program.
+

@@ -1,0 +1,87 @@
+AdminUser Load (3.1ms)  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 49 ORDER BY "admin_users"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+AdminUser Load (3.1ms)  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 23 ORDER BY "admin_users"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+User Load (3.1ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = 2341 ORDER BY "users"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+Editor Load (3.1ms)  SELECT  "editors".* FROM "editors" WHERE "editors"."id" = 532 ORDER BY "editors"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+Editor Load (3.1ms)  SELECT  "editors".* FROM "editors" WHERE "editors"."id" = 52 ORDER BY "editors"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+Editor Load (3.1ms)  SELECT  "editors".* FROM "editors" WHERE "editors"."id" = 12 ORDER BY "editors"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+AdminUser Load (3.1ms)  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 12 ORDER BY "admin_users"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+AdminUser Load (3.1ms)  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 11 ORDER BY "admin_users"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+
+  (0.2ms)  BEGIN
+User Create (2.6ms)  INSERT INTO "users" ("firstname", "lastname", "username", "email", "phone", "photo", "termsandservices", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["firstname", "Al"], ["lastname", "Delcy"], ["username", "aldelcy"], ["email", "aldelcy@email.com"], ["phone", "555-123-4567"], ["photo", nil], ["termsandservices", true], ["encrypted_password", "$2a$11$AtCpzzJae.Hxgbg7o2inne9uXCI.QZMG60O/X5EyMhqX1cgb/4I7i"], ["confirmation_token", "DxvVsv4HiyqyrsFYobuv"], ["confirmation_sent_at", "2020-07-08 20:57:54.339264"], ["created_at", "2020-07-08 20:57:54.338953"], ["updated_at", "2020-07-08 20:57:54.338953"]]
+UserRole Create (2.3ms)  INSERT INTO "user_roles" ("user_id", "role_id", "active", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 2], ["role", "student"], ["active", true], ["created_at", "2020-07-08 20:57:54.401185"], ["updated_at", "2020-07-08 20:57:54.401185"]]
+↳ app/models/user.rb:99:in `set_initial_role'
+  (0.5ms)  COMMIT
+  (0.2ms)  BEGIN
+User Create (2.6ms)  INSERT INTO "users" ("firstname", "lastname", "username", "email", "phone", "photo", "termsandservices", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["firstname", "Bob"], ["lastname", "Doe"], ["username", "bobdoe"], ["email", "bobdoe@email.com"], ["phone", "111-123-4567"], ["photo", nil], ["termsandservices", true], ["encrypted_password", "$2a$11$AtCpzzJae.Hxgbg7o2inne9uXCI.QZMG60O/X5EyMhqX1cgb/4I7i"], ["confirmation_token", "DxvVsv4HiyqyrsFYobuv"], ["confirmation_sent_at", "2020-07-08 20:57:54.339264"], ["created_at", "2020-07-08 20:57:54.338953"], ["updated_at", "2020-07-08 20:57:54.338953"]]
+UserRole Create (2.3ms)  INSERT INTO "user_roles" ("user_id", "role_id", "active", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 2], ["role", "student"], ["active", true], ["created_at", "2020-07-08 20:57:54.401185"], ["updated_at", "2020-07-08 20:57:54.401185"]]
+↳ app/models/user.rb:99:in `set_initial_role'
+  (0.5ms)  COMMIT
+  (0.2ms)  BEGIN
+User Create (2.6ms)  INSERT INTO "users" ("firstname", "lastname", "username", "email", "phone", "photo", "termsandservices", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["firstname", "Bob"], ["lastname", "Smith"], ["username", "bobsmith"], ["email", "bobsmith@email.com"], ["phone", "222-123-4567"], ["photo", nil], ["termsandservices", true], ["encrypted_password", "$2a$11$AtCpzzJae.Hxgbg7o2inne9uXCI.QZMG60O/X5EyMhqX1cgb/4I7i"], ["confirmation_token", "DxvVsv4HiyqyrsFYobuv"], ["confirmation_sent_at", "2020-07-08 20:57:54.339264"], ["created_at", "2020-07-08 20:57:54.338953"], ["updated_at", "2020-07-08 20:57:54.338953"]]
+UserRole Create (2.3ms)  INSERT INTO "user_roles" ("user_id", "role_id", "active", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 2], ["role", "student"], ["active", true], ["created_at", "2020-07-08 20:57:54.401185"], ["updated_at", "2020-07-08 20:57:54.401185"]]
+↳ app/models/user.rb:99:in `set_initial_role'
+  (0.5ms)  COMMIT
+  (0.2ms)  BEGIN
+User Create (2.6ms)  INSERT INTO "users" ("firstname", "lastname", "username", "email", "phone", "photo", "termsandservices", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["firstname", "Jason"], ["lastname", "Jones"], ["username", "jasonjones"], ["email", "jasonjones@email.com"], ["phone", "333-123-4567"], ["photo", nil], ["termsandservices", true], ["encrypted_password", "$2a$11$AtCpzzJae.Hxgbg7o2inne9uXCI.QZMG60O/X5EyMhqX1cgb/4I7i"], ["confirmation_token", "DxvVsv4HiyqyrsFYobuv"], ["confirmation_sent_at", "2020-07-08 20:57:54.339264"], ["created_at", "2020-07-08 20:57:54.338953"], ["updated_at", "2020-07-08 20:57:54.338953"]]
+UserRole Create (2.3ms)  INSERT INTO "user_roles" ("user_id", "role_id", "active", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 2], ["role", "student"], ["active", true], ["created_at", "2020-07-08 20:57:54.401185"], ["updated_at", "2020-07-08 20:57:54.401185"]]
+↳ app/models/user.rb:99:in `set_initial_role'
+  (0.5ms)  COMMIT
+
+    (0.2ms)  BEGIN
+AdditonalInfo Create (2.6ms)  INSERT INTO "addtional_info" ("file", "username") VALUES ($1, $2) RETURNING "id"  [["file", "additonal_info.txt"], ["username", "mariepierre"], ["confirmation_sent_at", "2020-07-08 20:57:54.339264"], ["created_at", "2020-07-08 20:57:54.338953"], ["updated_at", "2020-07-08 20:57:54.338953"]]
+  (0.5ms)  COMMIT
+
+User Load (3.1ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = 213 ORDER BY "users"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+AdminUser Load (3.1ms)  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 2 ORDER BY "admin_users"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+
+AdminUser Load (3.1ms)  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 4 ORDER BY "admin_users"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+User Load (3.1ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = 112 ORDER BY "users"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+
+AdminUser Load (3.1ms)  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 12 ORDER BY "admin_users"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+AdminUser Load (3.1ms)  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = 2 ORDER BY "admin_users"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+  (0.2ms)  BEGIN
+AdditonalInfo Create (2.6ms)  INSERT INTO "addtional_info" ("file", "username") VALUES ($1, $2) RETURNING "id"  [["file", "additonal_info.txt"], ["username", "bobsmith"], ["confirmation_sent_at", "2020-07-08 20:57:54.339264"], ["created_at", "2020-07-08 20:57:54.338953"], ["updated_at", "2020-07-08 20:57:54.338953"]]
+  (0.5ms)  COMMIT
+  (0.2ms)  BEGIN
+User Create (2.6ms)  INSERT INTO "users" ("firstname", "lastname", "username", "email", "phone", "photo", "termsandservices", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["firstname", "Jane"], ["lastname", "Doe"], ["username", "janedoe"], ["email", "janedoe@email.com"], ["phone", "444-123-4567"], ["photo", nil], ["termsandservices", true], ["encrypted_password", "$2a$11$AtCpzzJae.Hxgbg7o2inne9uXCI.QZMG60O/X5EyMhqX1cgb/4I7i"], ["confirmation_token", "DxvVsv4HiyqyrsFYobuv"], ["confirmation_sent_at", "2020-07-08 20:57:54.339264"], ["created_at", "2020-07-08 20:57:54.338953"], ["updated_at", "2020-07-08 20:57:54.338953"]]
+UserRole Create (2.3ms)  INSERT INTO "user_roles" ("user_id", "role_id", "active", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 2], ["role", "student"], ["active", true], ["created_at", "2020-07-08 20:57:54.401185"], ["updated_at", "2020-07-08 20:57:54.401185"]]
+↳ app/models/user.rb:99:in `set_initial_role'
+  (0.5ms)  COMMIT
+  (0.2ms)  BEGIN
+User Create (2.6ms)  INSERT INTO "users" ("firstname", "lastname", "username", "email", "phone", "photo", "termsandservices", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["firstname", "Sarah"], ["lastname", "Smith"], ["username", "sarahsmith"], ["email", "sarahsmith@email.com"], ["phone", "666-123-4567"], ["photo", nil], ["termsandservices", true], ["encrypted_password", "$2a$11$AtCpzzJae.Hxgbg7o2inne9uXCI.QZMG60O/X5EyMhqX1cgb/4I7i"], ["confirmation_token", "DxvVsv4HiyqyrsFYobuv"], ["confirmation_sent_at", "2020-07-08 20:57:54.339264"], ["created_at", "2020-07-08 20:57:54.338953"], ["updated_at", "2020-07-08 20:57:54.338953"]]
+UserRole Create (2.3ms)  INSERT INTO "user_roles" ("user_id", "role_id", "active", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 2], ["role", "editor"], ["active", true], ["created_at", "2020-07-08 20:57:54.401185"], ["updated_at", "2020-07-08 20:57:54.401185"]]
+↳ app/models/user.rb:99:in `set_initial_role'
+  (0.5ms)  COMMIT
+  (0.2ms)  BEGIN
+User Create (2.6ms)  INSERT INTO "users" ("firstname", "lastname", "username", "email", "phone", "photo", "termsandservices", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["firstname", "Bob"], ["lastname", "Dylan"], ["username", "bobdylan"], ["email", "bobdylan@email.com"], ["phone", "777-123-4567"], ["photo", nil], ["termsandservices", true], ["encrypted_password", "$2a$11$AtCpzzJae.Hxgbg7o2inne9uXCI.QZMG60O/X5EyMhqX1cgb/4I7i"], ["confirmation_token", "DxvVsv4HiyqyrsFYobuv"], ["confirmation_sent_at", "2020-07-08 20:57:54.339264"], ["created_at", "2020-07-08 20:57:54.338953"], ["updated_at", "2020-07-08 20:57:54.338953"]]
+UserRole Create (2.3ms)  INSERT INTO "user_roles" ("user_id", "role_id", "active", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 2], ["role", "student"], ["active", true], ["created_at", "2020-07-08 20:57:54.401185"], ["updated_at", "2020-07-08 20:57:54.401185"]]
+↳ app/models/user.rb:99:in `set_initial_role'
+  (0.5ms)  COMMIT
+  (0.2ms)  BEGIN
+User Create (2.6ms)  INSERT INTO "users" ("firstname", "lastname", "username", "email", "phone", "photo", "termsandservices", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["firstname", "Joe"], ["lastname", "Jonas"], ["username", "joejonas"], ["email", "joejonas@email.com"], ["phone", "888-123-4567"], ["photo", nil], ["termsandservices", true], ["encrypted_password", "$2a$11$AtCpzzJae.Hxgbg7o2inne9uXCI.QZMG60O/X5EyMhqX1cgb/4I7i"], ["confirmation_token", "DxvVsv4HiyqyrsFYobuv"], ["confirmation_sent_at", "2020-07-08 20:57:54.339264"], ["created_at", "2020-07-08 20:57:54.338953"], ["updated_at", "2020-07-08 20:57:54.338953"]]
+UserRole Create (2.3ms)  INSERT INTO "user_roles" ("user_id", "role_id", "active", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 2], ["role", "student"], ["active", true], ["created_at", "2020-07-08 20:57:54.401185"], ["updated_at", "2020-07-08 20:57:54.401185"]]
+↳ app/models/user.rb:99:in `set_initial_role'
+  (0.5ms)  COMMIT
+Editor Load (3.1ms)  SELECT  "editors".* FROM "editors" WHERE "editors"."id" = 231 ORDER BY "editors"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+  (0.2ms)  BEGIN
+User Create (2.6ms)  INSERT INTO "users" ("firstname", "lastname", "username", "email", "phone", "photo", "termsandservices", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["firstname", "Marie"], ["lastname", "Pierre"], ["username", "mariepierre"], ["email", "mariepierre@email.com"], ["phone", "999-123-4567"], ["photo", nil], ["termsandservices", true], ["encrypted_password", "$2a$11$AtCpzzJae.Hxgbg7o2inne9uXCI.QZMG60O/X5EyMhqX1cgb/4I7i"], ["confirmation_token", "DxvVsv4HiyqyrsFYobuv"], ["confirmation_sent_at", "2020-07-08 20:57:54.339264"], ["created_at", "2020-07-08 20:57:54.338953"], ["updated_at", "2020-07-08 20:57:54.338953"]]
+UserRole Create (2.3ms)  INSERT INTO "user_roles" ("user_id", "role_id", "active", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 2], ["role", "editor"], ["active", true], ["created_at", "2020-07-08 20:57:54.401185"], ["updated_at", "2020-07-08 20:57:54.401185"]]
+↳ app/models/user.rb:99:in `set_initial_role'
+  (0.5ms)  COMMIT
+  (0.2ms)  BEGIN
+User Create (2.6ms)  INSERT INTO "users" ("firstname", "lastname", "username", "email", "phone", "photo", "termsandservices", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["firstname", "Jovany"], ["lastname", "Johnson"], ["username", "jovanyjohnson"], ["email", "jovanyjohnson@email.com"], ["phone", "123-123-4567"], ["photo", nil], ["termsandservices", true], ["encrypted_password", "$2a$11$AtCpzzJae.Hxgbg7o2inne9uXCI.QZMG60O/X5EyMhqX1cgb/4I7i"], ["confirmation_token", "DxvVsv4HiyqyrsFYobuv"], ["confirmation_sent_at", "2020-07-08 20:57:54.339264"], ["created_at", "2020-07-08 20:57:54.338953"], ["updated_at", "2020-07-08 20:57:54.338953"]]
+UserRole Create (2.3ms)  INSERT INTO "user_roles" ("user_id", "role_id", "active", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 2], ["role", "student"], ["active", true], ["created_at", "2020-07-08 20:57:54.401185"], ["updated_at", "2020-07-08 20:57:54.401185"]]
+↳ app/models/user.rb:99:in `set_initial_role'
+  (0.5ms)  COMMIT
+Editor Load (3.1ms)  SELECT  "editors".* FROM "editors" WHERE "editors"."id" = 532 ORDER BY "editors"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+  (0.2ms)  BEGIN
+User Create (2.6ms)  INSERT INTO "users" ("firstname", "lastname", "username", "email", "phone", "photo", "termsandservices", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["firstname", "Tess"], ["lastname", "Jackson"], ["username", "tessjackson"], ["email", "tessjackson@email.com"], ["phone", "223-123-4567"], ["photo", nil], ["termsandservices", true], ["encrypted_password", "$2a$11$AtCpzzJae.Hxgbg7o2inne9uXCI.QZMG60O/X5EyMhqX1cgb/4I7i"], ["confirmation_token", "DxvVsv4HiyqyrsFYobuv"], ["confirmation_sent_at", "2020-07-08 20:57:54.339264"], ["created_at", "2020-07-08 20:57:54.338953"], ["updated_at", "2020-07-08 20:57:54.338953"]]
+UserRole Create (2.3ms)  INSERT INTO "user_roles" ("user_id", "role_id", "active", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["user_id", 2], ["role", "editor"], ["active", true], ["created_at", "2020-07-08 20:57:54.401185"], ["updated_at", "2020-07-08 20:57:54.401185"]]
+↳ app/models/user.rb:99:in `set_initial_role'
+  (0.5ms)  COMMIT
+Editor Load (3.1ms)  SELECT  "editors".* FROM "editors" WHERE "editors"."id" = 532 ORDER BY "editors"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+Editor Load (3.1ms)  SELECT  "editors".* FROM "editors" WHERE "editors"."id" = 12 ORDER BY "editors"."id" ASC LIMIT 1 /*application:VirtualWorld,controller:dashboard,action:index*/
+  (0.2ms)  BEGIN
+AdditonalInfo Create (2.6ms)  INSERT INTO "addtional_info" ("file", "username") VALUES ($1, $2) RETURNING "id"  [["file", "additonal_info.txt"], ["username", "joejonas"], ["confirmation_sent_at", "2020-07-08 20:57:54.339264"], ["created_at", "2020-07-08 20:57:54.338953"], ["updated_at", "2020-07-08 20:57:54.338953"]]
+  (0.5ms)  COMMIT
